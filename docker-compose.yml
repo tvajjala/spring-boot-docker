@@ -1,0 +1,11 @@
+# Docker compose used to run multiple docker images with single file
+# Define services and their configurations in this file
+# Run below command 
+# $/>docker-compose up -d
+# Which will run all the images 
+version: '2'
+services:
+    hello:
+       image: "tvajjala/spring-boot"
+       ports:
+        - "8080:8080"
